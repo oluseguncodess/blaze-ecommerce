@@ -5,7 +5,7 @@ export default function Header() {
 
     const displayNav = navContent.map(nav => <li key={nav.id} className='text-base text-black font-bold hover:text-orange-900 hover:underline underline-offset-8 decoration-[3px] cursor-pointer duration-300'>{nav.text}</li>)
     return(
-        <div className="w-full h-20 bg-white border-b border-b-gray-800 font-titleFont">
+        <div className="w-full h-[68px] sm:h-20 bg-white border-b border-b-gray-800 font-titleFont">
             <div className="sm:max-w-screen-xl h-full mx-auto flex items-center justify-between p-4 sm:p-0">
                 <div>
                     <img src={logo} alt="logo" className='sm:w-16 sm:h-16 w-12 h-12 rounded-full' />
