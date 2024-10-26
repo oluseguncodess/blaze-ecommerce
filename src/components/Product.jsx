@@ -1,3 +1,5 @@
+import ProductCard from "./ProductCard";
+
 export default function Product() {
     return(
         <div className="py-5 sm:py-10">
@@ -7,6 +9,9 @@ export default function Product() {
                 <p className="sm:max-w-[700px] p-4 sm:p-0 text-gray-600 text-center">
                     Welcome to Blaze e-commerce store. This is the best place to be to shop for the best products online!
                 </p>
+            </div>
+            <div className="sm:max-w-screen-xl mx-auto">
+                <ProductCard/>
             </div>
         </div>
     );
