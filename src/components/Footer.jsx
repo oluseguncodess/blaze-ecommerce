@@ -8,15 +8,15 @@ import { MdLocationOn } from "react-icons/md";
 export default function Footer() {
     return(
         <footer className="bg-black text-[#949494] py-20 font-titleFont">
-            <div className="sm:max-w-screen-xl w-full mx-auto flex flex-col gap-10 sm:grid sm:grid-cols-4 sm:gap-9">
+            <div className="sm:max-w-screen-xl w-full mx-auto flex flex-col gap-10 sm:grid sm:grid-cols-4 sm:gap-9 sm:place-items-center">
                 <div className="flex flex-col gap-7">
                     <img src={logo} alt="logo" className="sm:w-20 sm:h-20 w-12 h-12 rounded-full" />
                     <p className="text-white text-sm">Deployed website@vercel.app</p>
-                    <div className="flex gap-4 last:gap-0">
-                        <img src={paystack} alt="paystack" className="w-16 h-16"/>
-                        <img src={flutterwave} alt="fluterwave" className="w-16 h-16"/>
-                        <img src={stripe} alt="paystack" className="w-16 h-16"/>
-                        <img src={interswitch} alt="paystack" className="w-16 h-16"/>
+                    <div className="flex gap-2 last:gap-0">
+                        <img src={paystack} alt="paystack" className="w-14 h-14"/>
+                        <img src={flutterwave} alt="fluterwave" className="w-14 h-14"/>
+                        <img src={stripe} alt="paystack" className="w-14 h-14"/>
+                        <img src={interswitch} alt="paystack" className="w-14 h-14"/>
                     </div>
                     <div className="flex
                     gap-3">

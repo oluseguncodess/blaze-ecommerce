@@ -9,6 +9,9 @@ export default {
       fontFamily:{
         bodyFont: 'Poppins',
         titleFont: 'Nunito Sans',
+      },
+      backgroundColor: {
+        "star": "#024CAA",
       }
     },
   },

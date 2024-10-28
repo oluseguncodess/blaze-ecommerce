@@ -1,6 +1,8 @@
+/* eslint-disable react/prop-types */
 import ProductCard from "./ProductCard";
 
-export default function Product() {
+export default function Product({products}) {
+    const displayProducts = products.map(item => <ProductCard key={item.id} product={item}/>)
     return(
         <div className="py-5 sm:py-10">
             <div className="flex flex-col gap-4 items-center">
@@ -10,8 +12,8 @@ export default function Product() {
                     Welcome to Blaze e-commerce store. This is the best place to be to shop for the best products online!
                 </p>
             </div>
-            <div className="sm:max-w-screen-xl mx-auto">
-                <ProductCard/>
+            <div className="sm:max-w-screen-xl mx-auto py-10 grid sm:grid-cols-4 grid-cols-2 sm:gap-10 gap-7">
+                {displayProducts}
             </div>
         </div>
     );
